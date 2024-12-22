@@ -1,0 +1,137 @@
+*
+    body{
+        background-color: rgb(176, 198, 226);
+    }
+    ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #0c1f3f;
+
+}
+nav{
+position: fixed;
+top: 0;
+width:100%;
+
+}
+li {
+float: left;
+}
+
+li a {
+display: block;
+color:rgb(136, 156, 211);
+
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color:#0c1f3f;
+}
+.profile{
+background-color: rgb(61, 89, 180);
+
+}
+.objective{
+
+}
+.btn1{
+background-color: 
+#0c1f3f; 
+border: 3px solid rgb(61, 89, 180);
+
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+font-size: 20px;
+margin: 4px 2px;
+
+}
+.Edu{
+display: flex;
+gap: 5%;
+padding: 2%;
+
+
+}
+.uni{
+text-align: center;
+}
+.achievements{
+display:flex;
+gap: 20%;
+}
+.card{
+border: 2px solid #0c1f3f;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 200px;
+transition: transform 0.3s; box-shadow: 0.3s;
+width: 20%;
+
+}
+.skills{
+display: flex;
+gap: 20%;
+padding: 2%;
+
+}
+.projects{
+display: flex;
+gap: 20%;
+padding: 2%;
+
+}
+.footer{
+background-color: #0c1f3f; height: 5rem;
+justify-content: center;
+}
+.icon{
+display: flex;
+gap: 30px;
+justify-content: center;
+}
+
+@media(max-width: 100%) {
+    .profile {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btn1 {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .Edu img,
+    .projects img {
+        width: 80%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    li {
+        float: none; 
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 100%) {
+    .card {
+        width: 80%;
+       flex-wrap: wrap;
+    }
+
+    .skills, .achievements, .projects {
+        flex-direction: column; /* Stack items vertically */
+
+    }
+  }
